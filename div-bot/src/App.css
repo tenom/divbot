@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto+Slab&display=swap");
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /*background-color: #1b1f35;*/
+  background-image: linear-gradient(160deg, #415a99, #1b1f35);
+  overflow: hidden;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+h2 {
+  width: 80%;
+  text-align: justify;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.623);
+}
+
+.description {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description p {
+  width: 80%;
+  margin: 1rem;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.chat-section {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bot-box {
+  width: 30vw;
+  height: 90vh;
+  border-radius: 20px;
+  background-color: #d0e7fdea;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  outline: none;
+  border-color: #63adf2;
+  box-shadow: 0 0 20px #63adf2;
+}
+
+.bot-profile {
+  width: 30vw;
+  height: 10vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.103);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bot-profile .prof {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+}
+.bot-profile p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #1b1f35;
+}
+
+.conversation-view {
+  width: 30vw;
+  height: 70vh;
+  padding: 20px 30px;
+  overflow-y: scroll;
+  padding-top: 10px;
+}
+.message-box {
+  width: 28vw;
+  height: 38px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.text-input {
+  width: 24vw;
+  height: 20px;
+  border: none;
+  background-color: none;
+  color: black;
+}
+.text-input:focus {
+  outline: none;
+}
+
+.chat-bubble {
+  font-size: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.chat-bubble.ai {
+  justify-content: flex-end;
+}
+
+.chat-bubble.ai .chat-content {
+  background-color: #1d71c0a4;
+}
+
+.chat-content {
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #563cccb0;
+  color: white;
+  border-radius: 10px;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+  }
+  h1 {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .description {
+    width: 100vw;
+    height: 100vh;
+  }
+  .chat-section {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .bot-box {
+    width: 80%;
+    height: 90vh;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .bot-profile {
+    width: 100%;
+  }
+  .bot-profile .prof {
+    width: 30px;
+    height: 30px;
+  }
+  .conversation-view {
+    width: 100%;
+    height: 70vh;
+  }
+  .message-box {
+    width: 90%;
+  }
+
+  .text-input {
+    width: 60vw;
+  }
+}

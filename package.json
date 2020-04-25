@@ -1,0 +1,11 @@
+/*{
+  "scripts": {
+    "client-install": "npm install --prefix div-bot/",
+    "build": "npm run build --prefix div-bot/",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix div-bot/",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix div-bot/  && npm run build --prefix div-bot/"
+  }
+}*/
